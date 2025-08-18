@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Nunito+Sans:wght@400;500;600;700&display=swap');
+
+:root{
+  /* Базовые */
+  --clr-bg:            #F5F3DE; /* общий светлый фон */
+  --clr-text:          #273B31; /* тёмно-зелёный — основной для текста/логотипов */
+
+  /* Тематические акценты */
+  /* Около здоровья */
+  --clr-health-bg:        #E4E8CD;
+
+  /* Около выгоды */
+  --clr-benefit-bg:       #782533; /* винно-бордовый */
+  --clr-white:         #FFFFFF;
+
+  /* Около кофе */
+  --clr-coffee:        #6B3F28;
+  --clr-coffee-bg:     #E4DAC6;
+
+  /* Около дома */
+  --clr-home-text:     #3E332B;
+  --clr-home-accent:   #E2782D;
+  --clr-home-bg:       #F3E6D6;
+
+  /* Доп. служебные */
+  --clr-muted:         #98A39A;
+  --radius:            12px;
+  --container:         1200px;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin: 0 0 .5em;
+  font-family: "Manrope", system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Helvetica Neue", sans-serif;
+  line-height: 1.25;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+h1{ font-size: clamp(2rem, 2.6vw, 3rem); }
+h2{ font-size: clamp(1.6rem, 2vw, 2.25rem); }
+h3{ font-size: clamp(1.25rem, 1.6vw, 1.75rem); }
+
+.gradient-bg {
+    background: linear-gradient(135deg, #a955ff 0%, #F5F3DF 0%);
+}
+
+.channel-card {
+    transition: all 0.3s ease;
+}
+
+.channel-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.stat-card {
+    transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: scale(1.03);
+}
+
+.partner-logo {
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.partner-logo:hover {
+    filter: grayscale(0);
+    opacity: 1;
+}
+
+#backToTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+
+p{ margin: 0 0 1em; }
+
+/* Ссылки */
+a{
+  color: var(--clr-text);
+  text-decoration-color: color-mix(in srgb, var(--clr-text) 35%, transparent);
+  text-underline-offset: 2px;
+}
+a:hover{ text-decoration-color: currentColor; }
+
+/* Контейнер/карты */
+.container{ max-width: var(--container); margin-inline: auto; padding: 0 16px; }
+.card{
+  background: var(--clr-white);
+  color: var(--clr-home-text);
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: 0 4px 18px rgba(0,0,0,.06);
+}
+
+/* ---- Утилиты цветов ---- */
+/* Тёмно-зелёный (общий бренд) */
+.bg-brand{ background: var(--clr-bg); color: var(--clr-white); }
+.text-brand{ color: var(--clr-text); }
+.bg-brand-green { background: var(--clr-text); }
+.border-brand-green { border-color: var(--clr-text); }
+
+/* Около здоровья */
+.bg-health{ background: var(--clr-health-bg); color: var(--clr-white); }
+.text-health{ color: var(--clr-health); }
+.text-health-dark{ color: var(--clr-health-dark); }
+
+/* Около выгоды */
+.bg-benefit{ background: var(--clr-benefit-bg); color: var(--clr-white); }
+.text-benefit{ color: var(--clr-benefit); }
+
+/* Около кофе */
+.bg-coffee{ background: var(--clr-coffee-bg); color: var(--clr-white); }
+.text-coffee{ color: var(--clr-coffee); }
+
+/* Около дома */
+.bg-home{ background: var(--clr-home-bg); }
+.text-home{ color: var(--clr-home-text); }
+.text-home-accent{ color: var(--clr-home-accent); }

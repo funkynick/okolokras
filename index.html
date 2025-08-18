@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Около, Красноярск</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-gray-800">ОКОЛО</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-gray-700 hover:text-amber-800 transition">О нас</a>
+                    <a href="#channels" class="text-gray-700 hover:text-amber-800 transition">Наши каналы</a>
+                    <a href="#stats" class="text-gray-700 hover:text-amber-800 transition">Показатели</a>
+                    <a href="#contact" class="text-gray-700 hover:text-amber-800 transition">Связаться</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menuBtn" class="text-gray-700 focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile menu -->
+            <div id="mobileMenu" class="hidden md:hidden py-4 px-2">
+                <a href="#about" class="block py-2 text-gray-700 hover:text-amber-800 transition">О нас</a>
+                <a href="#channels" class="block py-2 text-gray-700 hover:text-amber-800 transition">Наши каналы</a>
+                <a href="#stats" class="block py-2 text-gray-700 hover:text-amber-800 transition">Показатели</a>
+                <a href="#contact" class="block py-2 text-gray-700 hover:text-amber-800 transition">Связаться</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg py-20 md:py-32">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Красноярское <br>телеграм-медиа</h1>
+                    <p class="text-xl text-gray-700 mb-8">Сеть тематических каналов, которые делают жизнь красноярцев
+                        интереснее и лучше каждый день.</p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#channels"
+                            class="border border-brand-green text-brand hover:bg-green-50 font-medium py-3 px-6 rounded-lg transition duration-300 text-center">Список
+                            наших каналов</a>
+                        <a href="#contact"
+                            class="bg-brand-green hover:bg-green-700 text-white font-medium py-3 px-6 rounded-lg transition duration-300 text-center">Как
+                            разместиться?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">О нас</h2>
+                <div class="w-20 h-1 bg-brand-green mx-auto"></div>
+            </div>
+            <div class="max-w-4xl mx-auto">
+                <p class="text-lg text-gray-700 mb-6 text-center">
+                    Мы - команда авторов-экспертов, которые активно развивают Красноярское медиа в телеграм. С нашими
+                    каналами вы получаете доступ к нишевым площадкам, на которых мы заботимся о вовлечении, не крутим
+                    цифры, и работаем только на качество, заботливо отбирая для наших подписчиков только самое лучшее.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Ценности</h2>
+                <div class="w-20 h-1 bg-amber-800 mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-md text-center">
+                    <div class="w-16 h-16 bg-brand rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-filter text-amber-800 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Фильтрация контента</h3>
+                    <p class="text-gray-600">Только проверенный и качественный контент, отвечающий нашей миссии</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md text-center">
+                    <div class="w-16 h-16 bg-brand rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-eye text-amber-800 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Эстетика</h3>
+                    <p class="text-gray-600">В визуале и тексте мы стараемся придерживаться высоких стандартов</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md text-center">
+                    <div class="w-16 h-16 bg-brand rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-handshake text-amber-800 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Искренность</h3>
+                    <p class="text-gray-600">Честный и открытый диалог с партнерами и нашей аудиторией</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md text-center">
+                    <div class="w-16 h-16 bg-brand rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-graduation-cap text-amber-800 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Экспертность</h3>
+                    <p class="text-gray-600">Глубокое погружение в темы и профессиональный подход, вы получаете честное
+                        мнение</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md text-center">
+                    <div class="w-16 h-16 bg-brand rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-users text-amber-800 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Комьюнити</h3>
+                    <p class="text-gray-600">Активная работа с обратной связью и вовлечение аудитории</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md text-center">
+                    <div class="w-16 h-16 bg-brand rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-bullseye text-amber-800 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Позиционирование</h3>
+                    <p class="text-gray-600">Каждый канал имеет свою уникальную нишу и целевую аудиторию</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Channels Section -->
+    <section id="channels" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Наши каналы</h2>
+                <div class="w-20 h-1 bg-amber-800 mx-auto"></div>
+                <p class="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">Пять тематических направлений, охватывающих
+                    ключевые сферы жизни красноярцев</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Channel 1 -->
+                <div class="channel-card bg-brand rounded-xl overflow-hidden shadow-md">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center mr-4 overflow-hidden">
+                                 <img src="images/eda.png" alt="">
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800">Около еды</h3>
+                        </div>
+                        <p class="text-gray-700 mb-4">Помогаем делать осознанный выбор заведений, держим руку на пульсе
+                            всех новостей гастрономии и погружаем в мир кулинарных открытий</p>
+                        <br>
+                        <div class="flex justify-between items-center">
+                            <a href="https://t.me/okolo_food" target="_blank"
+                                class="text-amber-800 hover:text-amber-900 font-medium flex items-center">
+                                <i class="fab fa-telegram mr-2"></i> Перейти
+                            </a>
+                            <span
+                                class="bg-white text-amber-800 text-xs font-semibold px-3 py-1 rounded-full">Гастрономия</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Channel 2 -->
+                <div class="channel-card bg-home rounded-xl overflow-hidden shadow-md">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center mr-4 overflow-hidden">
+                                 <img src="images/dom.png" alt="">
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800">Около дома</h3>
+                        </div>
+                        <p class="text-gray-700 mb-4">Предлагаем эстетичные и функциональные решения для интерьера,
+                            полезные подборки с предметами быта, подарками и посудой.</p>
+                        <br>
+                        <div class="flex justify-between items-center">
+                            <a href="https://t.me/okolo_home" target="_blank"
+                                class="text-amber-800 hover:text-amber-900 font-medium flex items-center">
+                                <i class="fab fa-telegram mr-2"></i> Перейти
+                            </a>
+                            <span
+                                class="bg-white text-amber-800 text-xs font-semibold px-3 py-1 rounded-full">Интерьеры</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Channel 3 -->
+                <div class="channel-card bg-coffee rounded-xl overflow-hidden shadow-md">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center mr-4 overflow-hidden">
+                                 <img src="images/kofe.png" alt="">
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800">Около кофе</h3>
+                        </div>
+                        <p class="text-gray-700 mb-4">Продвигаем культуру потребления качественного кофе, помогаем
+                            находить лучшие кофейни и новые вкусы.</p>
+                        <br>
+                        <div class="flex justify-between items-center">
+                            <a href="https://t.me/okolo_coffee_krsk" target="_blank"
+                                class="text-amber-800 hover:text-amber-900 font-medium flex items-center">
+                                <i class="fab fa-telegram mr-2"></i> Перейти
+                            </a>
+                            <span class="bg-white text-amber-800 text-xs font-semibold px-3 py-1 rounded-full">Кофейная
+                                культура</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Channel 4 -->
+                <div class="channel-card bg-health rounded-xl overflow-hidden shadow-md">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center mr-4 overflow-hidden">
+                                 <img src="images/zdorovie.png" alt="">
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800">Около здоровья</h3>
+                        </div>
+                        <p class="text-gray-700 mb-4">Мотивируем горожан вести более здоровый образ жизни, способствуем
+                            росту осознанности в потреблении еды, рассказываем о полезных привычках.</p>
+                        <br>
+                        <div class="flex justify-between items-center">
+                            <a href="https://t.me/okolo_health" target="_blank"
+                                class="text-amber-800 hover:text-amber-900 font-medium flex items-center">
+                                <i class="fab fa-telegram mr-2"></i> Перейти
+                            </a>
+                            <span
+                                class="bg-white text-amber-800 text-xs font-semibold px-3 py-1 rounded-full">Здоровье</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Channel 5 -->
+                <div class="channel-card bg-[#F2EDE3] rounded-xl overflow-hidden shadow-md">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center mr-4 overflow-hidden">
+                                 <img src="images/vigoda.png" alt="">
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800">Около выгоды</h3>
+                        </div>
+                        <p class="text-gray-700 mb-4">Мотивируем на осознанное и рациональное потребление, предлагая
+                            лучшие скидки и акции, а также на импульсивные покупки по самым выгодным ценам.</p>
+                        <br>
+                        <div class="flex justify-between items-center">
+                            <a href="https://t.me/okolo_price" target="_blank"
+                                class="text-amber-800 hover:text-amber-900 font-medium flex items-center">
+                                <i class="fab fa-telegram mr-2"></i> Перейти
+                            </a>
+                            <span class="bg-white text-amber-800 text-xs font-semibold px-3 py-1 rounded-full">Скидки и
+                                акции</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA Card -->
+                <div class="channel-card bg-brand-green rounded-xl overflow-hidden shadow-md flex items-center">
+                    <div class="p-6 text-white">
+                        <h3 class="text-xl font-bold mb-4">Хотите разместить рекламу?</h3>
+                        <p class="mb-6">У нас есть индивидуальные условия для каждого партнера. Свяжитесь с нами, чтобы
+                            обсудить возможности сотрудничества.</p>
+                        <a href="#contact"
+                            class="bg-brand text-amber-800 hover:bg-gray-100 font-medium py-2 px-6 rounded-lg transition duration-300 inline-block">Написать
+                            нам</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Почему именно мы?</h2>
+                <div class="w-20 h-1 bg-amber-800 mx-auto"></div>
+                <p class="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">Ниже несколько ключевых показателей нашей
+                    статистики</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="stat-card bg-white p-6 rounded-xl shadow-md text-center">
+                    <div class="text-4xl font-bold text-amber-800 mb-2">17K+</div>
+                    <div class="text-gray-600">Общая аудитория</div>
+                    <div class="mt-4 h-1 bg-brand w-1/2 mx-auto"></div>
+                    <p class="text-sm text-gray-500 mt-2">Подписчики наших каналов</p>
+                </div>
+                <div class="stat-card bg-white p-6 rounded-xl shadow-md text-center">
+                    <div class="text-4xl font-bold text-amber-800 mb-2">35%</div>
+                    <div class="text-gray-600">Охваты</div>
+                    <div class="mt-4 h-1 bg-brand w-1/2 mx-auto"></div>
+                    <p class="text-sm text-gray-500 mt-2">Средний ERR по каналам</p>
+                </div>
+                <div class="stat-card bg-white p-6 rounded-xl shadow-md text-center">
+                    <div class="text-4xl font-bold text-amber-800 mb-2">5%</div>
+                    <div class="text-gray-600">Вовлеченность</div>
+                    <div class="mt-4 h-1 bg-brand w-1/2 mx-auto"></div>
+                    <p class="text-sm text-gray-500 mt-2">Средний показатель ER по каналам</p>
+                </div>
+                <div class="stat-card bg-white p-6 rounded-xl shadow-md text-center">
+                    <div class="text-4xl font-bold text-amber-800 mb-2">20-38</div>
+                    <div class="text-gray-600">Возраст ЦА</div>
+                    <div class="mt-4 h-1 bg-brand w-1/2 mx-auto"></div>
+                    <p class="text-sm text-gray-500 mt-2">Основная возрастная группа</p>
+                </div>
+            </div>
+
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Наша аудитория</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-amber-800 mt-1 mr-2"></i>
+                            <span class="text-gray-700">Жители Красноярска 25-45 лет</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-amber-800 mt-1 mr-2"></i>
+                            <span class="text-gray-700">Ценящие качество и экспертный подход</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-amber-800 mt-1 mr-2"></i>
+                            <span class="text-gray-700">Интересующиеся локальными новинками</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-amber-800 mt-1 mr-2"></i>
+                            <span class="text-gray-700">Лояльные к рекомендациям</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Что мы предлагаем</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-amber-800 mt-1 mr-2"></i>
+                            <span class="text-gray-700">Отдельный прайс-лист на каждый канал</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-amber-800 mt-1 mr-2"></i>
+                            <span class="text-gray-700">Пакетные предложения для размещения</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-amber-800 mt-1 mr-2"></i>
+                            <span class="text-gray-700">Индивидуальный подход к каждому партнеру</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-amber-800 mt-1 mr-2"></i>
+                            <span class="text-gray-700"> Возможность размещения на всех площадках</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-amber-800 mt-1 mr-2"></i>
+                            <span class="text-gray-700">Индивидуальные форматы интеграции</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Условия размещения</h2>
+                <div class="w-20 h-1 bg-amber-800 mx-auto"></div>
+                <p class="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">Гибкие варианты сотрудничества для любого
+                    бюджета</p>
+            </div>
+
+            <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="p-8">
+                    <div class="mb-8">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Индивидуальные условия</h3>
+                        <p class="text-gray-700">
+                            Стоимость размещения зависит от выбранного канала, формата интеграции и объема
+                            сотрудничества. Мы готовы предложить специальные условия для долгосрочных партнерств и
+                            интересных проектов.
+                        </p>
+                    </div>
+
+                    <div class="mb-8">
+                        <a href="#contact"
+                            class="bg-amber-800 hover:bg-amber-900 text-white font-medium py-3 px-6 rounded-lg transition duration-300 inline-block">Запросить
+                            прайс-лист</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Свяжитесь с нами</h2>
+                <div class="w-20 h-1 bg-amber-800 mx-auto"></div>
+                <p class="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">Готовы обсудить сотрудничество? Напишите нам!
+                </p>
+            </div>
+
+            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-6">Контактная информация</h3>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-brand rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-envelope text-amber-800"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800">E-mail</h4>
+                                <a href="mailto:info@okolo-media.ru"
+                                    class="text-gray-600 hover:text-amber-800">okolokras@ya.ru</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-brand rounded-full flex items-center justify-center mr-4">
+                                <i class="fab fa-telegram text-amber-800"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Telegram</h4>
+                                <a href="https://t.me/Smael1989" target="_blank"
+                                    class="text-gray-600 hover:text-amber-800">Евгений Никитин</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-brand rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-map-marker-alt text-amber-800"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Локация</h4>
+                                <p class="text-gray-600">Красноярск, Россия</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Наши каналы</h3>
+                    <div class="grid grid-cols-2 gap-3">
+                        <a href="https://t.me/okolo_food" target="_blank"
+                            class="bg-white hover:bg-gray-50 border border-gray-200 rounded-lg px-4 py-2 flex items-center">
+                            <i class="fab fa-telegram text-amber-800 mr-2"></i>
+                            <span class="text-sm">Около еды</span>
+                        </a>
+                        <a href="https://t.me/okolo_home" target="_blank"
+                            class="bg-white hover:bg-gray-50 border border-gray-200 rounded-lg px-4 py-2 flex items-center">
+                            <i class="fab fa-telegram text-amber-800 mr-2"></i>
+                            <span class="text-sm">Около дома</span>
+                        </a>
+                        <a href="https://t.me/okolo_coffee_krsk" target="_blank"
+                            class="bg-white hover:bg-gray-50 border border-gray-200 rounded-lg px-4 py-2 flex items-center">
+                            <i class="fab fa-telegram text-amber-800 mr-2"></i>
+                            <span class="text-sm">Около кофе</span>
+                        </a>
+                        <a href="https://t.me/okolo_health" target="_blank"
+                            class="bg-white hover:bg-gray-50 border border-gray-200 rounded-lg px-4 py-2 flex items-center">
+                            <i class="fab fa-telegram text-amber-800 mr-2"></i>
+                            <span class="text-sm">Около здоровья</span>
+                        </a>
+                        <a href="https://t.me/okolo_price" target="_blank"
+                            class="bg-white hover:bg-gray-50 border border-gray-200 rounded-lg px-4 py-2 flex items-center">
+                            <i class="fab fa-telegram text-amber-800 mr-2"></i>
+                            <span class="text-sm">Около выгоды</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">ОКОЛО</h3>
+                    <p class="text-gray-400">Красноярское тг-медиа, делающее жизнь горожан интереснее и полезнее каждый
+                        день</p>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Навигация</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition">О нас</a></li>
+                        <li><a href="#channels" class="text-gray-400 hover:text-white transition">Наши каналы</a></li>
+                        <li><a href="#stats" class="text-gray-400 hover:text-white transition">Показатели</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition">Связаться</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Каналы</h4>
+                    <ul class="space-y-2">
+                        <li><a href="https://t.me/okolo_food" target="_blank"
+                                class="text-gray-400 hover:text-white transition">Около еды</a></li>
+                        <li><a href="https://t.me/okolo_home" target="_blank"
+                                class="text-gray-400 hover:text-white transition">Около дома</a></li>
+                        <li><a href="https://t.me/okolo_coffee_krsk" target="_blank"
+                                class="text-gray-400 hover:text-white transition">Около кофе</a></li>
+                        <li><a href="https://t.me/okolo_health" target="_blank"
+                                class="text-gray-400 hover:text-white transition">Около здоровья</a></li>
+                        <li><a href="https://t.me/okolo_price" target="_blank"
+                                class="text-gray-400 hover:text-white transition">Около выгоды</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Контакты</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-gray-400 mr-2"></i>
+                            <a href="mailto:info@okolo-media.ru"
+                                class="text-gray-400 hover:text-white transition">okolokras@ya.ru</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fab fa-telegram text-gray-400 mr-2"></i>
+                            <a href="https://t.me/Smael1989" target="_blank"
+                                class="text-gray-400 hover:text-white transition">тг: Евгений Никитин</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
+                <p>ОКОЛО | Красноярское тг-медиа &copy; 2025 </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button id="backToTop"
+        class="bg-blue-600 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menuBtn').addEventListener('click', function () {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+
+                // Close mobile menu if open
+                document.getElementById('mobileMenu').classList.add('hidden');
+            });
+        });
+
+        // Back to top button
+        window.addEventListener('scroll', function () {
+            var backToTop = document.getElementById('backToTop');
+            if (window.pageYOffset > 300) {
+                backToTop.style.display = 'flex';
+            } else {
+                backToTop.style.display = 'none';
+            }
+        });
+
+        document.getElementById('backToTop').addEventListener('click', function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+    </script>
+</body>
+
+</html>

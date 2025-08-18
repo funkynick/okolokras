@@ -4,10 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Около, Красноярск</title>
+    <title>Около | Красноярск</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+
+    <!-- SEO -->
+    <link rel="canonical" href="https://okolo-clients.ru/">
+    <meta name="description"
+        content="Около – сеть тематических каналов, которые делают жизнь красноярцев интереснее и лучше каждый день.">
+    <meta name="theme-color" content="#2C3A32">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:site_name" content="Около | Красноярск">
+    <meta property="og:title" content="Около — Красноярское телеграм-медиа">
+    <meta property="og:description"
+        content="Около – сеть тематических каналов, которые делают жизнь красноярцев интереснее и лучше каждый день.">
+    <meta property="og:url" content="https://okolo-clients.ru/">
+    <meta property="og:image" content="images/okolo-opengraph.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Около — сеть тематических каналов">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Около — Красноярское телеграм-медиа">
+    <meta name="twitter:description"
+        content="Около – сеть тематических каналов, которые делают жизнь красноярцев интереснее и лучше каждый день.">
+    <meta name="twitter:image" content="images/okolo-opengraph.png">
 </head>
 
 <body class="bg-gray-50">
@@ -41,20 +68,31 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="gradient-bg py-20 md:py-32">
+    <section class="relative py-20 md:py-32 overflow-hidden">
+        <div aria-hidden="true" class="absolute inset-0 -z-10">
+            <div class="absolute inset-0 bg-[url('images/hero.jpg')] bg-cover bg-center"></div>
+            <div class="absolute inset-0 bg-white/80"></div>
+        </div>
+
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/2 mb-10 md:mb-0">
-                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Красноярское <br>телеграм-медиа</h1>
-                    <p class="text-xl text-gray-700 mb-8">Сеть тематических каналов, которые делают жизнь красноярцев
-                        интереснее и лучше каждый день.</p>
+                    <h1 class="text-4xl md:text-5xl font-black text-gray-800 mb-6">
+                        Красноярское <br>телеграм-медиа
+                    </h1>
+                    <p class="text-xl text-gray-700 mb-8">
+                        Сеть тематических каналов, которые делают жизнь красноярцев
+                        интереснее и лучше каждый день.
+                    </p>
                     <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
                         <a href="#channels"
-                            class="border border-brand-green text-brand hover:bg-green-50 font-medium py-3 px-6 rounded-lg transition duration-300 text-center">Список
-                            наших каналов</a>
+                            class="border-2 border-[color:var(--clr-text)] text-brand hover:bg-green-50 font-medium py-3 px-6 rounded-lg transition duration-300 text-center">
+                            Список наших каналов
+                        </a>
                         <a href="#contact"
-                            class="bg-brand-green hover:bg-green-700 text-white font-medium py-3 px-6 rounded-lg transition duration-300 text-center">Как
-                            разместиться?</a>
+                            class="bg-brand-green hover:bg-green-700 text-white font-medium py-3 px-6 rounded-lg transition duration-300 text-center">
+                            Как разместиться?
+                        </a>
                     </div>
                 </div>
             </div>
@@ -148,8 +186,9 @@
                 <div class="channel-card bg-brand rounded-xl overflow-hidden shadow-md">
                     <div class="p-6">
                         <div class="flex items-center mb-4">
-                            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center mr-4 overflow-hidden">
-                                 <img src="images/eda.png" alt="">
+                            <div
+                                class="w-12 h-12 bg-white rounded-full flex items-center justify-center mr-4 overflow-hidden">
+                                <img src="images/eda.png" alt="">
                             </div>
                             <h3 class="text-xl font-bold text-gray-800">Около еды</h3>
                         </div>
@@ -171,8 +210,9 @@
                 <div class="channel-card bg-home rounded-xl overflow-hidden shadow-md">
                     <div class="p-6">
                         <div class="flex items-center mb-4">
-                            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center mr-4 overflow-hidden">
-                                 <img src="images/dom.png" alt="">
+                            <div
+                                class="w-12 h-12 bg-white rounded-full flex items-center justify-center mr-4 overflow-hidden">
+                                <img src="images/dom.png" alt="">
                             </div>
                             <h3 class="text-xl font-bold text-gray-800">Около дома</h3>
                         </div>
@@ -194,8 +234,9 @@
                 <div class="channel-card bg-coffee rounded-xl overflow-hidden shadow-md">
                     <div class="p-6">
                         <div class="flex items-center mb-4">
-                            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center mr-4 overflow-hidden">
-                                 <img src="images/kofe.png" alt="">
+                            <div
+                                class="w-12 h-12 bg-white rounded-full flex items-center justify-center mr-4 overflow-hidden">
+                                <img src="images/kofe.png" alt="">
                             </div>
                             <h3 class="text-xl font-bold text-gray-800">Около кофе</h3>
                         </div>
@@ -217,8 +258,9 @@
                 <div class="channel-card bg-health rounded-xl overflow-hidden shadow-md">
                     <div class="p-6">
                         <div class="flex items-center mb-4">
-                            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center mr-4 overflow-hidden">
-                                 <img src="images/zdorovie.png" alt="">
+                            <div
+                                class="w-12 h-12 bg-white rounded-full flex items-center justify-center mr-4 overflow-hidden">
+                                <img src="images/zdorovie.png" alt="">
                             </div>
                             <h3 class="text-xl font-bold text-gray-800">Около здоровья</h3>
                         </div>
@@ -240,8 +282,9 @@
                 <div class="channel-card bg-[#F2EDE3] rounded-xl overflow-hidden shadow-md">
                     <div class="p-6">
                         <div class="flex items-center mb-4">
-                            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center mr-4 overflow-hidden">
-                                 <img src="images/vigoda.png" alt="">
+                            <div
+                                class="w-12 h-12 bg-white rounded-full flex items-center justify-center mr-4 overflow-hidden">
+                                <img src="images/vigoda.png" alt="">
                             </div>
                             <h3 class="text-xl font-bold text-gray-800">Около выгоды</h3>
                         </div>

@@ -117,6 +117,7 @@ a:hover{ text-decoration-color: currentColor; }
 .text-brand{ color: var(--clr-text); }
 .bg-brand-green { background: var(--clr-text); }
 .border-brand-green { border-color: var(--clr-text); }
+.border-brand-muted { border-color: var(--clr-muted); }
 
 /* Около здоровья */
 .bg-health{ background: var(--clr-health-bg); color: var(--clr-white); }
